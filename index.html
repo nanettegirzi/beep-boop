@@ -8,23 +8,25 @@
     <title>Beep-Boop</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class = "jumbotron">
         <h1>Beep-Boop</h1>
-        <hr width=30%>
+        <hr width=30% >
           <p><i>A number replacer game</i></p>
       </div>
 
       <form id="number-replacer">
         <div class="form-group">
-          <label for="number">Enter a number:</label>
+          <label for="number">Enter a number between 1 and 30:</label>
           <input id="number" type="text">
         </div>
-        <br>
-        <button type="submit" class="btn btn-secondary">Click here to find out what happens</button>
+
+        <button type="submit" class="btn btn-secondary">See what happens</button>
       </form>
 
       <div id="result">
+        <ul id ="list">
+        </ul>
 
       </div>
     </div>
