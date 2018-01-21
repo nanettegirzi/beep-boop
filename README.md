@@ -22,25 +22,24 @@ This program asks a user to enter a number, and then based on the number and the
   * Example Input: 1
   * Example Output: Boop
 
-  * Program replaces numbers divisible by 3 with a sentance.
+  * Program replaces numbers divisible by 3 with a sentence.
     * Example Input: 30
     * Example Output: "I'm Sorry. I'm afraid I can't do that for you."
 
- 
+
 ## Known Bugs
 
-_Font End working, back end logic currently not working_
+When a user enters a number with both a 1 and a zero, it returns Beep, when it should just return Boop.
 
 ## Support and contact details
 
-_If you have any issues, please email ngirzi@gmail.com_
+If you have any issues, please email ngirzi@gmail.com
 
 ## Technologies Used
 
-_HTML, CSS, JavaScript, jQuery, Bootstrap, Git, GitHub_
+HTML, CSS, JavaScript, jQuery, Bootstrap, Git, GitHub
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
 
 Copyright (c) 2018 **_Nanette Girzi_**

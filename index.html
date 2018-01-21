@@ -15,20 +15,21 @@
           <p><i>A number replacer game</i></p>
       </div>
 
-      <form id="number-replacer">
+      <form id="userInput">
         <div class="form-group">
-          <label for="number">Enter a number between 1 and 30:</label>
-          <input id="number" type="text">
+          <label for="userNumber">Enter a number and see what happens!</label>
+          <input id="userNumber" class="form-control "type="text">
         </div>
 
-        <button type="submit" class="btn btn-secondary">See what happens</button>
-      </form>
+        <button type="submit" class="btn btn-secondary">Submit</button>
 
-      <div id="result">
-        <h3>Wow, great work. Can you figure out what is happening?</h3>
-        <ul id ="list">
-        </ul>
-        <button type="button" class="btn btn-primary" id = "again">Do it again</button>
+      </form>
+      <br>
+
+
+      <div class="display">
+        <img src="img/beepboop.jpg" alt="robot saying beepboop">
+        <p><span class = "beepBoopResult"></span></p>
       </div>
 
     </div>

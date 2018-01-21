@@ -8,6 +8,11 @@ hr {
   border-top: 1px solid white;
 }
 
-#result {
-  display: none
+.display {
+  display: none;  
+}
+
+.display img {
+  float: left;
+
 }

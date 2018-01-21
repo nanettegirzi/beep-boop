@@ -1,38 +1,36 @@
-var userInput = parseInt($("#number").val());
+//back end
 
-var numbers = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
+var beepBoop = function(inputNumber) {
+  var numbers = "";
+  var stringNumber = inputNumber.toString();
 
-var beep = "Beep";
-var boop = "Boop";
-var sorry = "I'm sorry. I'm afraid I can't do that.";
+  if (inputNumber % 3 === 0) {
+    return numbers.concat("I'm sorry. I'm afraid I can't do that.");
 
+  } else if (stringNumber.includes("1")) {
+      return numbers = numbers.concat("Boop");
 
-function beepBoop() {
-  if (index % 3 === 0){
-    $("#list").append("<li>" + sorry + "</li>");
-  } else if (index.inludes(1)) {
-    $("#list").append("<li>" + boop + "</li>");
-  } else if (index.includes(0)) {
-    $("#list").append("<li>" + beep + "</li>");
-  }
-};
+  } else if (stringNumber.includes("0")) {
+      return numbers = numbers.concat("Beep");
 
-for (var index = 0; index <=userInput; index++) {
-  beepBoop();
-}
+    } else {
+      for (index = 0; index <= stringNumber; index++) {
+        numbers = numbers.concat(index + ",");
+      };
+      return numbers;
+    };
+  };
 
+//front end
 $(document).ready(function() {
-  $("#number-replacer").submit(function(event) {
+  $("#userInput").submit(function(event) {
     event.preventDefault();
-
-    $("#number-replacer").toggle();
-    $("#result").toggle();
-
-    $("#again").click(function(event){
-        $("#number-replacer").toggle();
-        $("#result").toggle();
-      });
-
-
+    var userNumber = parseInt($("#userNumber").val());
+    var result = beepBoop(userNumber);
+    $(".display").show();
+    $("#userInput").each(function() {
+      this.reset();
+    });
+    $(".beepBoopResult").text(result)
   });
 });
